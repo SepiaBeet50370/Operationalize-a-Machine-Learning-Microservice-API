@@ -23,17 +23,17 @@ The following tasks were performed:
 ### Short description of folders and files in the repo
 
 * [.circleci](/.circleci): For the CircleCI build server
-* [model_data](/Operationalize-a-Machine-Learning-Microservice-API/model_data) : this folder contains the pretrained `sklearn` model and housing csv files
-* [output_txt_files](/Operationalize-a-Machine-Learning-Microservice-API/output_txt_files): folder contains sample output logs from running `./run_docker.sh` and `./run_kubernetes.sh`
-* [app.py](/Operationalize-a-Machine-Learning-Microservice-API/app.py) : contains the flask app
-* [Dockerfile](/Operationalize-a-Machine-Learning-Microservice-API/app.py): contains instructions to containerize the application
-* [Makefile](/Operationalize-a-Machine-Learning-Microservice-API/Makefile) : contains instructions for environment setup and lint tests
-* [requirements.txt](/Operationalize-a-Machine-Learning-Microservice-API/requirements.txt): list of required dependencies
-* [run_docker.sh](/Operationalize-a-Machine-Learning-Microservice-API/run_docker.sh): bash script to build Docker image and run the application in a Docker container
-* [upload_docker.sh](/Operationalize-a-Machine-Learning-Microservice-API/upload_docker.sh): bash script to upload the built Docker image to Dockerhub
-* [run_kubernetes.sh](/Operationalize-a-Machine-Learning-Microservice-API/run_kubernetes.sh): bash script to run the application in a Kubernetes cluster
-* [make_prediction.sh](/Operationalize-a-Machine-Learning-Microservice-API/make_prediction.sh): bash script to make predictions against the Docker container and k8s cluster
-* [README.md](/Operationalize-a-Machine-Learning-Microservice-API/README.md): this README file
+* [model_data](/model_data) : this folder contains the pretrained `sklearn` model and housing csv files
+* [output_txt_files](/output_txt_files): folder contains sample output logs from running `./run_docker.sh` and `./run_kubernetes.sh`
+* [app.py](/app.py) : contains the flask app
+* [Dockerfile](/app.py): contains instructions to containerize the application
+* [Makefile](/Makefile) : contains instructions for environment setup and lint tests
+* [requirements.txt](/requirements.txt): list of required dependencies
+* [run_docker.sh](/run_docker.sh): bash script to build Docker image and run the application in a Docker container
+* [upload_docker.sh](/upload_docker.sh): bash script to upload the built Docker image to Dockerhub
+* [run_kubernetes.sh](/run_kubernetes.sh): bash script to run the application in a Kubernetes cluster
+* [make_prediction.sh](/make_prediction.sh): bash script to make predictions against the Docker container and k8s cluster
+* [README.md](/README.md): this README file
 
 ### Instructions
 ## Setup the Environment
