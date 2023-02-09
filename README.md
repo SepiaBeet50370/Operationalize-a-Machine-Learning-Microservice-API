@@ -22,7 +22,7 @@ The following tasks were performed:
 ---
 ### Short description of folders and files in the repo
 
-* [.circleci](/Operationalize-a-Machine-Learning-Microservice-API/.circleci): For the CircleCI build server
+* [.circleci](/.circleci): For the CircleCI build server
 * [model_data](/Operationalize-a-Machine-Learning-Microservice-API/model_data) : this folder contains the pretrained `sklearn` model and housing csv files
 * [output_txt_files](/Operationalize-a-Machine-Learning-Microservice-API/output_txt_files): folder contains sample output logs from running `./run_docker.sh` and `./run_kubernetes.sh`
 * [app.py](/Operationalize-a-Machine-Learning-Microservice-API/app.py) : contains the flask app
