@@ -1,47 +1,44 @@
 # Template:
 [![SepiaBeet50370](https://circleci.com/gh/SepiaBeet50370/Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://app.circleci.com/pipelines/github/SepiaBeet50370)
 
-<!-- # Example:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
-
-# Example for specific branch:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs/tree/teesloane-patch-5.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs/?branch=teesloane-patch-5) -->
-
-
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+This project operationalizes a Machine Learning Microservice API. 
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+Given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
 
 ### Project Tasks
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
+The following tasks were performed:
+* Test project code using linting
+* Complete Dockerfile to containerize the application
+* Deploy the containerized application using Docker and make a prediction
+* Improve the log statements in the source code
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
 ---
+### Short description of folders and files in the repo
 
+* [.circleci](/Operationalize-a-Machine-Learning-Microservice-API/.circleci): For the CircleCI build server
+* [model_data](/Operationalize-a-Machine-Learning-Microservice-API/model_data) : this folder contains the pretrained `sklearn` model and housing csv files
+* [output_txt_files](/Operationalize-a-Machine-Learning-Microservice-API/output_txt_files): folder contains sample output logs from running `./run_docker.sh` and `./run_kubernetes.sh`
+* [app.py](/Operationalize-a-Machine-Learning-Microservice-API/app.py) : contains the flask app
+* [Dockerfile](/Operationalize-a-Machine-Learning-Microservice-API/app.py): contains instructions to containerize the application
+* [Makefile](/Operationalize-a-Machine-Learning-Microservice-API/Makefile) : contains instructions for environment setup and lint tests
+* [requirements.txt](/Operationalize-a-Machine-Learning-Microservice-API/requirements.txt): list of required dependencies
+* [run_docker.sh](/Operationalize-a-Machine-Learning-Microservice-API/run_docker.sh): bash script to build Docker image and run the application in a Docker container
+* [upload_docker.sh](/Operationalize-a-Machine-Learning-Microservice-API/upload_docker.sh): bash script to upload the built Docker image to Dockerhub
+* [run_kubernetes.sh](/Operationalize-a-Machine-Learning-Microservice-API/run_kubernetes.sh): bash script to run the application in a Kubernetes cluster
+* [make_prediction.sh](/Operationalize-a-Machine-Learning-Microservice-API/make_prediction.sh): bash script to make predictions against the Docker container and k8s cluster
+* [README.md](/Operationalize-a-Machine-Learning-Microservice-API/README.md): this README file
+
+### Instructions
 ## Setup the Environment
 
-* Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
-```bash
-python3 -m pip install --user virtualenv
-# You should have Python 3.7 available in your host. 
-# Check the Python path using `which python3`
-# Use a command similar to this one:
-python3 -m virtualenv --python=<path-to-Python3.7> .devops
-source .devops/bin/activate
-```
+* Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
