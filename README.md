@@ -1,6 +1,5 @@
 # Template:
-[![SepiaBeet50370](https://circleci.com/gh/SepiaBeet50370/
-Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://app.circleci.com/pipelines/github/SepiaBeet50370)
+[![SepiaBeet50370](https://circleci.com/gh/SepiaBeet50370/Operationalize-a-Machine-Learning-Microservice-API.svg?style=svg)](https://app.circleci.com/pipelines/github/SepiaBeet50370)
 
 <!-- # Example:
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
